@@ -25,7 +25,7 @@ const getGiphy = async (value) => {
 
 const getWeatherDisplay = async(value) => {
     try {
-        const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=A7gw5fRG28YESPVKnvhZwx5uJRccvgf7&s=${value}`)
+        const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=A7gw5fRG28YESPVKnvhZwx5uJRccvgf7&s=${value} weather`)
         const data = await response.json()
         const giphyImg = document.querySelector('.iconDisplay')
         giphyImg.src = data.data.images.original.url
