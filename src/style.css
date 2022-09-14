@@ -44,6 +44,7 @@
 #giphyImg {
     display:flex;
     object-fit: contain;
+    width: 480px;
     
 }
 
@@ -98,3 +99,9 @@
 .weatherD{
     font-size: 24px;
 }
+
+
+.hidden {
+    visibility: hidden;
+}
+
